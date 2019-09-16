@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">myFragmentsTraining</string>
+    <string name="frag1_text">Fragment 1</string>
+    <string name="frag2_text">Fragment 2</string>
+    <string name="empty">Пустой список</string>
+
+    <string-array name="Contacts">
+        <item>Мура</item>
+        <item>Мама</item>
+        <item>Папа</item>
+        <item>Жень</item>
+        <item>Самара</item>
+    </string-array>
+
+</resources>

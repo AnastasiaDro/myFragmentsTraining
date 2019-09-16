@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7700ff00">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/who" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag2_text">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/helloCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Привет! Как дела?" />
+
+    <CheckBox
+        android:id="@+id/loveChekBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Я тебя люблю!" />
+
+    <CheckBox
+        android:id="@+id/betterChekBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ты - лучше всех!" />
+
+    <CheckBox
+        android:id="@+id/youAreCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Как здорово, что ты есть!" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить" />
+
+</LinearLayout>
