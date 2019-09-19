@@ -1,20 +1,12 @@
 package com.mymur.myfragmentstraining;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.fragment.app.ListFragment;
@@ -22,17 +14,11 @@ import androidx.fragment.app.ListFragment;
 public class Fragment1 extends ListFragment {
 
     int currentContact = 0; //текущий контакт
-//    boolean isExistContactsFragment;
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(), R.array.Contacts, android.R.layout.simple_list_item_activated_1);
         setListAdapter(adapter);
-        //Здесь создаём из ресурсов список городов (из массива)
-
         return inflater.inflate(R.layout.fragment1, container, false);
 
     }
@@ -40,24 +26,6 @@ public class Fragment1 extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-
-
-        //чтобы показать список, надо задействовать адаптер
-        //Такая конструкция работает для списков, например ListActivity
-
-
-
-        //Посмотрим, существует ли у нас рядом фрагмент 2, если ландскейп ориентация, то да
-        //То есть истина ли, что рамка fragment2Frame не пуста
-//        isExistContactsFragment = getActivity().findViewById(R.id.fragment2Frame) != null;
-
-
-        //если это повторное создание, то восстановим текущую позицию
-//        if (savedInstanceState != null) {
-//            currentContact = savedInstanceState.getInt("CurrentContact", 0);
-//        }
-
     }
 
     //Сохраним текущую позицию (вызывается перед выходом из фрагмента)

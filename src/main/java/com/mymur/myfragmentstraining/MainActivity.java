@@ -13,13 +13,11 @@ public class MainActivity extends AppCompatActivity {
 
     Fragment fragment1;
     Fragment fragment2;
-    //стартовая ориентация
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         // получаем экземпляр FragmentTransaction
         FragmentManager fragmentManager = getSupportFragmentManager();

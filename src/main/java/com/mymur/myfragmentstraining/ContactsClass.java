@@ -3,7 +3,6 @@ package com.mymur.myfragmentstraining;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -29,7 +28,7 @@ public class ContactsClass {
 
         //задаём строчку для отправки сообщений
         if (position == 0){
-            Toast.makeText((activity), "Давай всё-таки отправим Муре", Toast.LENGTH_SHORT).show();
+            Toast.makeText((activity), "Давай всё-таки отправим Муре", Toast.LENGTH_LONG).show();
         }
         sendSmsToContact = "smsto:"+ contacts.get(position);
         Intent smsSend = new Intent(Intent.ACTION_SENDTO);

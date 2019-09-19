@@ -1,16 +1,8 @@
 package com.mymur.myfragmentstraining;
-
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.content.Intent;
-import android.content.res.Configuration;
 import android.content.res.TypedArray;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Surface;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -36,18 +28,8 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-//        ImageView contactImage = new ImageView(getActivity());
-//        contactImage.findViewById(R.id.contactImage);
-//        //получить из ресурсов массив указателей на изображения контактов
-//        TypedArray imgs = getResources().obtainTypedArray(R.array.contactsimgs);
-//        //выбрать по индексу подходящий
         imgArray = getResources().obtainTypedArray(R.array.contactsimgs);
-
         position = getArguments().getInt("CurrentContact");
-//            if (getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-//                position = getArguments().getInt("CurrentContact");
-//                System.out.println("позиция" + position);
-//            }
         view = inflater.inflate(R.layout.fragment2, container, false);
 
         return view;
@@ -56,7 +38,6 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        //imgArray = getResources().obtainTypedArray(R.array.contactsimgs);
         imageView = getActivity().findViewById(R.id.contactImage);
 
         contactsClass = new ContactsClass();
@@ -67,13 +48,6 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
         CheckBox betterCheckBox = view.findViewById(R.id.betterCheckBox);
         CheckBox youAreCheckBox = view.findViewById(R.id.youAreCheckBox);
         checkBoxArr = new CheckBox[] {helloCheckBox, loveCheckBox, betterCheckBox, youAreCheckBox };
-
-//                if (getActivity().getWindowManager().getDefaultDisplay().getRotation() == Surface.ROTATION_0) {
-//                    if (getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-//                        position = getActivity().getIntent().getExtras().getInt("currentContact");
-//                    }
-
-
          smsText = "";
 
 
