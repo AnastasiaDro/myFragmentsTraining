@@ -5,11 +5,16 @@
     <string name="empty">Пустой список</string>
 
     <string-array name="Contacts">
+        <item>Никто</item>
         <item>Мура</item>
         <item>Мама</item>
         <item>Папа</item>
-        <item>Жень</item>
-        <item>Самара</item>
     </string-array>
+
+    <string name="helloCheckBox">Привет! Как дела? </string>
+    <string name="loveCheckBox">Я тебя люблю! </string>
+    <string name="betterCheckBox">Ты - лучше всех! </string>
+    <string name="youAreCheckBox">Как здорово, что ты есть!</string>
+
 
 </resources>

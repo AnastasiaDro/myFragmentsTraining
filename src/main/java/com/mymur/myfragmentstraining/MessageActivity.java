@@ -16,7 +16,7 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
-        // получаем экземпляр FragmentTransaction
+  //       получаем экземпляр FragmentTransaction
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragment2 = new Fragment2();

@@ -9,7 +9,7 @@
     android:background="#7700ff00">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/contactImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/who" />
@@ -25,30 +25,36 @@
         android:id="@+id/helloCheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Привет! Как дела?" />
+        android:text="@string/helloCheckBox" />
 
     <CheckBox
-        android:id="@+id/loveChekBox"
+        android:id="@+id/loveCheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Я тебя люблю!" />
+        android:text="@string/loveCheckBox" />
 
     <CheckBox
-        android:id="@+id/betterChekBox"
+        android:id="@+id/betterCheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ты - лучше всех!" />
+        android:text="@string/betterCheckBox" />
 
     <CheckBox
         android:id="@+id/youAreCheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Как здорово, что ты есть!" />
+        android:text="@string/youAreCheckBox" />
 
     <Button
         android:id="@+id/sendBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Отправить" />
+
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
 </LinearLayout>
