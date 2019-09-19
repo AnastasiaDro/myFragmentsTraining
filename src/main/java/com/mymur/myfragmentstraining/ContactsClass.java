@@ -19,7 +19,7 @@ public class ContactsClass {
     contacts.add("89680560408");
     contacts.add("89680560408");
     contacts.add("89184123685");
-    contacts.add("Papa");
+    contacts.add("89854226566");
     sendSmsToContact = "";
     }
 
