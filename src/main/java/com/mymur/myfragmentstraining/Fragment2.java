@@ -77,7 +77,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
          smsText = "";
 
 
-        testText =  getActivity().findViewById(R.id.testText);
+
 
         try {
             imageView.setImageResource(imgArray.getResourceId(position, 0));
@@ -107,7 +107,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
         }
 
         System.out.println(smsText);
-        startActivity(contactsClass.sendToContact(position, smsText));
+        startActivity(contactsClass.sendToContact(position, smsText, getActivity()));
 
     }
 }
